@@ -34,7 +34,7 @@
   }
 
   & .separator {
-    height: 1px;
+    height: 1.4px;
     margin-block: 2rem;
     background: radial-gradient(var(--text-color-secondary), var(--surface-color) 70%);
   }
@@ -105,8 +105,22 @@
       margin-inline: auto;
     }
 
+    & .cards .basic {
+      .separator {
+        margin-block: 1.7rem;
+      }
+
+      zin-pricing {
+        padding-block: 2rem;
+      }
+    }
+
     & .premium .card {
       padding-bottom: 6rem;
+
+      .separator {
+        height: 1px;
+      }
     }
 
     & .card:nth-child(3) {
